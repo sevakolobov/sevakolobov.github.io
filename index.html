@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+ 
+        <!-- Styles -->
+        <style type="text/css">
+            html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;height:100%}body{margin:0}
+            article,aside,footer,header,nav,section{display:block}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+            abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+            b,strong{font-weight:inherit;font-weight:bolder}
+            body {
+               min-height: 100%;
+               background: #f4f5f6;
+               color: #000;
+               font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+               font-size: 14px;
+               margin: 0;
+               padding: 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            a {
+                text-decoration: underline;
+                color: #3f7bb3;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            p {
+                margin: 0 0 20px 0;
+            }
+            .wrapper {
+                background: #fff;
+                border: 1px solid #dfe3e3;
+                border-radius: 5px;
+                padding: 20px;
+                max-width: 550px;
+            }
+            .header {
+                background: #f6f6f6;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                margin: -20px -20px 20px -20px;
+                padding: 20px;
+                overflow: hidden;
+                line-height: 1;
+                position: relative;
+            }
+            .header-name {
+                float: left;
+                font-size: 25px;
+                font-weight: bold;
+                text-shadow: 1px 1px 0 #fff;
+            }
+            .header-name span {
+                font-size: 16px;
+                font-weight: normal;
+            }
+            .block-info {
+                margin: 0 0 20px 0;
+            }
+            .block-info span {
+                font-style: italic;
+                font-weight: 300;
+            }
+            .block-info p {
+                margin-left: 10px;
+            }
+            .block-info a {
+                color: #000;
+            }
+            .social-link {
+                display:inline-block;
+                margin-bottom: 2.4%;
+                background: #ccc;
+                color: #fff !important;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .social-link:nth-child(1n+1) {
+                margin-left: 2.4%;
+            }
+            .social-link span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+            }
+            .social-link svg {
+                display: inline-block;
+            }
+            .social-link__tw { background: #00abf0; }
+            .social-link__fb { background: #39579a; }
+            .social-link__gh { background: #202020; }
+            .social-link__so { background: #f90; }
+            .social-link__li { background: #1884BC; }
+            .social-link__db { background: #E93E7C; }
+            .block-info-title {
+                border-bottom: 1px solid #dfe3e3;
+                font-size: 18px;
+                font-weight: bold;
+                margin: 0 0 10px 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <g id="fb" transform="scale(2)"><path fill="#fff" d="M7.492 0.094v2.062h-1.227q-0.672 0-0.906 0.281t-0.234 0.844v1.477h2.289l-0.305 2.313h-1.984v5.93h-2.391v-5.93h-1.992v-2.313h1.992v-1.703q0-1.453 0.813-2.254t2.164-0.801q1.148 0 1.781 0.094z"></path></g>
+                <g id="twitter" transform="scale(2)"><path fill="#fff" d="M12.656 3.188q-0.523 0.766-1.266 1.305 0.008 0.109 0.008 0.328 0 1.016-0.297 2.027t-0.902 1.941-1.441 1.645-2.016 1.141-2.523 0.426q-2.117 0-3.875-1.133 0.273 0.031 0.609 0.031 1.758 0 3.133-1.078-0.82-0.016-1.469-0.504t-0.891-1.246q0.258 0.039 0.477 0.039 0.336 0 0.664-0.086-0.875-0.18-1.449-0.871t-0.574-1.605v-0.031q0.531 0.297 1.141 0.32-0.516-0.344-0.82-0.898t-0.305-1.203q0-0.688 0.344-1.273 0.945 1.164 2.301 1.863t2.902 0.777q-0.062-0.297-0.062-0.578 0-1.047 0.738-1.785t1.785-0.738q1.094 0 1.844 0.797 0.852-0.164 1.602-0.609-0.289 0.898-1.109 1.391 0.727-0.078 1.453-0.391z"></path></g>
+                <g id="instagram" transform="scale(2)"><path fill="#fff" d="M8 7q0-.83-.6-1.4T6 5t-1.4.6T4 7t.6 1.4T6 9t1.4-.6T8 7zm1.08 0q0 1.28-.9 2.18t-2.18.9-2.18-.9T2.92 7t.9-2.18T6 3.92t2.18.9.9 2.18zm.84-3.2q0 .3-.2.5t-.52.22-.5-.2-.22-.52.2-.5.52-.22.5.2.22.52zM6 2.08H4.58l-.76.02-.8.07-.56.15q-.4.16-.7.45t-.44.7q-.1.22-.15.55t-.07.8-.03.76 0 .82 0 .6 0 .6 0 .82.03.76.07.8.15.56q.15.4.45.7t.7.44q.22.1.55.15t.8.07.76.03.82 0 .6 0 .6 0 .82 0 .76-.03.8-.07.56-.15q.4-.15.7-.45t.44-.7q.1-.22.15-.55t.07-.8.03-.76 0-.82 0-.6 0-.6 0-.82-.03-.76-.07-.8-.15-.56q-.16-.4-.45-.7t-.7-.44q-.22-.1-.55-.14t-.8-.08-.76-.03-.82 0-.6 0zM12 7q0 1.8-.04 2.48-.08 1.62-.97 2.5t-2.52.98Q7.78 13 6 13t-2.48-.04q-1.62-.08-2.5-.97T.03 9.47Q0 8.78 0 7t.04-2.48Q.12 2.9 1 2.02t2.52-.98Q4.22 1 6 1t2.48.04q1.62.08 2.5.97t.98 2.52Q12 5.22 12 7z"/></g>
+                <g id="github" transform="scale(2)"><path fill="#fff" d="M6 1q1.63 0 3 .8T11.2 4t.8 3q0 1.96-1.14 3.53T7.9 12.7q-.2.04-.3-.06t-.1-.23v-.6-1.04q0-.76-.4-1.1.43-.06.8-.15t.72-.3.64-.52.4-.82.17-1.17q0-.94-.62-1.62.3-.7-.05-1.6-.22-.07-.63.1t-.72.33l-.3.2q-.73-.2-1.5-.2t-1.5.2q-.12-.08-.33-.2t-.65-.3-.67-.12q-.35.9-.06 1.6-.63.68-.63 1.6 0 .67.16 1.18t.4.82.64.52.74.3.8.15q-.3.28-.38.8-.16.08-.35.12t-.44.04-.5-.16-.45-.5q-.15-.24-.38-.4t-.38-.18l-.16-.02q-.16 0-.23.03t-.04.1.06.1.1.1l.06.03q.17.08.34.3t.25.4l.08.18q.1.3.35.48t.52.23.54.05.43-.03l.18-.03q0 .3 0 .68t.02.43q0 .15-.1.24t-.32.06q-1.8-.6-2.95-2.17T0 7q0-1.63.8-3T3 1.8 6 1zM2.27 9.62q.03-.06-.05-.1-.08-.02-.1.02-.03.05.05.1.07.04.1-.02zm.25.26q.05-.04-.02-.12-.08-.07-.13-.03-.05.04.02.13.07.08.12.02zm.23.35q.07-.05 0-.14-.06-.12-.13-.06-.07.04 0 .14t.13.06zm.33.33q.06-.06-.03-.15-.1-.08-.16 0-.08.05.02.14.1.1.16.02zm.44.2q.03-.1-.1-.13-.12-.03-.15.06t.1.1q.12.05.15-.04zm.5.04q0-.1-.14-.1-.12 0-.12.1t.13.08q.12 0 .12-.08zm.45-.08q-.02-.1-.14-.07-.13.02-.1.12t.13.06.1-.1z"/></g>
+                <g id="stackoverflow" transform="scale(2)"><path fill="#fff" d="M10.07 12.75H1.34V9H.1v5H11.3V9h-1.25v3.75zM2.7 8.65l.27-1.22 6.12 1.3-.27 1.2zm.82-2.92l.52-1.14L9.7 7.23l-.52 1.13zM5.1 2.95L5.87 2l4.8 4-.8.96zM8.2 0l3.7 5-1 .76-3.7-5zM2.57 11.5v-1.25h6.25v1.24H2.58z"/></g>
+                <g id="linkedin" transform="scale(2)"><path fill="#fff" d="M2.73 4.88v7.75H.15V4.88h2.58zm.16-2.4q0 .58-.4.96t-1.06.4h-.02q-.64 0-1.03-.4T0 2.5q0-.6.4-.96t1.05-.38 1.04.38.4.95zM12 8.2v4.44H9.43V8.48q0-.82-.32-1.28t-.97-.47q-.5 0-.83.27t-.5.67q-.08.23-.08.63v4.32H4.15q.02-3.1.02-5.05t0-2.3l-.02-.4h2.57v1.14H6.7q.16-.24.32-.43t.44-.4.68-.35.9-.12q1.34 0 2.15.9t.8 2.6z"/></g>
+                <g id="skype" transform="scale(2)"><path fill="#fff" d="M9.16 8.3q0-.4-.15-.7t-.37-.54-.57-.4-.64-.25-.7-.17l-.8-.2Q5.7 6 5.58 5.97t-.28-.1-.23-.12-.13-.16-.06-.24q0-.6 1.13-.6.34 0 .6.1t.43.22.3.26.3.23.4.1q.35 0 .58-.26t.23-.6q0-.44-.44-.8t-1.12-.5-1.42-.2q-.53 0-1.03.13t-.94.36-.7.67-.26 1q0 .48.15.84t.42.6.63.38.8.25l1.14.28q.7.2.87.3.25.15.25.46 0 .3-.3.5t-.83.2q-.4 0-.73-.12t-.5-.3-.36-.35-.35-.3-.42-.14q-.4 0-.6.24t-.2.58q0 .72.96 1.23t2.27.52q.57 0 1.1-.14t.95-.42.7-.73.25-1.03zM12 10q0 1.24-.88 2.12T9 13q-1.02 0-1.83-.63-.6.13-1.17.13-1.12 0-2.14-.43T2.1 10.9.94 9.13.5 7q0-.57.12-1.17Q0 5 0 4q0-1.24.88-2.12T3 1q1.02 0 1.83.62.6-.12 1.17-.12 1.12 0 2.14.43T9.9 3.1t1.17 1.76T11.5 7q0 .57-.13 1.17.63.8.63 1.83z"/></g>
+            </svg>
+        </div>
+        
+        <div class="wrapper" role="main">
+            <header class="header">
+                <div class="header-name">Vsevolod Kolobov <span>Saint-Petersburg RU</span></div>
+            </header>
+            
+            <div class="block-info">
+                <div class="social-block">
+       
+                    <a class="social-link social-link__gh" aria-label="Open github" title="github" rel="noopener" target="_blank" href="https://github.com/vsevolodkolobov"><span><svg width="24" height="28"><use x="0" y="0" href="#github" /></svg></span></a>
+                    
+                    <a class="social-link social-link__so" aria-label="Open stackoverflow" title="stackoverflow" rel="noopener" target="_blank" 
+                    href="https://stackoverflow.com/users/10360597/vsevolod"><span><svg width="24" height="28"><use x="0" y="0" href="#stackoverflow" /></svg></span></a>
+
+                    <a class="social-link social-link__li" aria-label="Open linkedin" title="linkedin" rel="noopener" target="_blank" 
+                    href="https://www.linkedin.com/in/vsevolod-kolobov-48819617b/"><span><svg width="24" height="28"><use x="0" y="0" href="#linkedin" /></svg></span></a>
+        
+                    <a class="social-link social-link__tw" aria-label="Open twitter" title="twitter" rel="noopener" target="_blank" 
+                    href="https://twitter.com/sevakolobov"><span><svg width="24" height="28"><use x="0" y="0" href="#twitter"/></svg></span></a>
+                    
+                    <a class="social-link social-link__db" aria-label="Open instagram" title="instagram" rel="noopener" target="_blank" href="https://www.instagram.com/sevakolobov/"><span><svg width="28" height="28"><use x="0" y="0" href="#instagram" /></svg></span></a>
+                
+                </div>
+            </div>
+            
+            <div class="block-info">
+                <div class="block-info-title">Experience</div>
+                <p>
+                    <span>Backend developer</span> <strong><a  rel="noopener" target="_blank">Java</a></strong><br/>
+                    2017 – Present<br/>
+                </p>
+            </div>
+            
+            <div class="block-info">
+                <div class="block-info-title">Education</div>
+                <p>
+                    <abbr title="State University of Aerospace Instrumentation. Russia, Saint Petersburg.">SUAI</abbr>  software engineering, Saint-Petersburg
+                    <br>Technical specialist - <span><em>2016 – 2020</em></span>
+                     <br>
+                </p>
+            </div>
+        </div>
+        
+    </body>
+</html>
